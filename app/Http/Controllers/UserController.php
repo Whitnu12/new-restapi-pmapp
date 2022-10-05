@@ -87,7 +87,7 @@ class UserController extends Controller
 
         $user->update($request->all());
         return redirect()->route('user.index')
-        ->with('succes', 'user updated successfully')
+        ->with('succes', 'user updated successfully');
     }
 
     /**
@@ -101,6 +101,6 @@ class UserController extends Controller
         $user->delete();
 
         return redirect()->route('user.index')
-        ->with('succes','User Deleted Successfully')
+        ->with('succes','User Deleted Successfully');
     }
 }
